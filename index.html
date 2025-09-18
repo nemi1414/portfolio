@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="titulos-header">
+            <h1>Juan Ignacio Nemi</h1>
+            <h2>Desarrollador Fullstack</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        <div class="sobre-mi-contenedor">
+            <img src="fotoPerfil.jpg" alt="foto de perfil" width = "100px" class="foto-sobre-mi">
+            <div class="sobre-mi-texto">
+                <h3>Sobre mí</h3>
+                <p>Tengo 23 años y soy un estudiante de programación en la UTN a falta de 1 año para recibirme!</p>
+                <p>Me apasiona crear aplicaciones web o sistemas escalables y de alto rendimiento.</p>
+                <p>Me caracterizo por mi proactividad, empatía y capacidad autodidacta.</p>
+                <p>Estoy en búsqueda de oportunidades desafiantes que me permitan seguir aprendiendo, creciendo y aportando valor.</p>
+                <p>Soy de CABA, Buenos Aires.</p>
+                <p>Mi nivel de inglés es C1.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="conocimientos">
+        <h3 class = "titulo-conocimientos">Conocimientos</h3>
+        <div class="iconos">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-csharp-plain colored"></i>
+            <i class="devicon-python-plain colored"></i>
+        </div>
+    </section>
+
+    <section id = "proyectos">
+        <h3>Proyectos</h3>
+
+        <div class="escalera">
+            <div class="texto-proyecto">
+                <h4>Juego de dados - Escalera (back-end)</h4>
+                <p>Proyecto en consola con menú: un jugador, dos jugadores, simulación y ranking.</p>
+                <p>Tecnologías:</p>
+                <ul>
+                    <li><p>C++</p></li>
+                    <li><p>Librería rlutil</p></li>
+                </ul>
+            </div>
+            <iframe src="https://www.youtube.com/embed/ywoFwvQyKLo" frameborder="0" title="Juego de dados - Escalera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="cine">
+            <div class="texto-proyecto">
+                <h4>Sistema de gestión de entradas de cine (back-end)</h4>
+                <p>Aplicación de consola con un sistema de registros de administradores y clientes.</p>
+                <p>Permite al administrador gestionar las peliculas y salas de un cine, y permite a los clientes ver la cartelera y reservar entradas del cine.</p>
+                <p>Tecnologías:</p>
+                <ul>
+                    <li><p>C++</p></li>
+                    <li><p>Librería rlutil</p></li>
+                    <li><p>Programación orientada a objetos</p></li>
+                    <li><p>Manejo de archivos</p></li>
+                </ul>
+            </div>
+            <iframe src="https://www.youtube.com/embed/1Ow_lqytQzY"  frameborder="0" title="Gestor de cine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+
+        <div class = "ecommerce">
+            <div class="texto-proyecto">
+                <h4>Página de ropa (front-end)</h4>
+                <p>Página de productos con barras de navegación, secciones y mapa de ubicación.</p>
+                <p>Tecnologías:</p>
+                <ul>
+                    <li><p>HTML</p></li>
+                    <li><p>CSS</p></li>
+                    <li><p>JavaScript</p></li>
+                </ul>
+            </div>
+            <iframe src="https://www.youtube.com/embed/o8mwPoS5SMY" frameborder="0" title = "Página de ropa" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id = "estudios">
+        <h3>Estudios</h3>
+        <ul>
+            <li><p>Estudio la Tecnicatura Universitaria en Programación en la UTN.</p></li>
+            <li><p>Cuento con 10 materias aprobadas de 18</p></li>
+            <li><p>Actualmente tengo un promedio de 8.6</p></li>
+        </ul>
+    </section>
+    <section id="contacto">
+        <h3>Contacto</h3>
+        <div class="contacto">
+            <!-- Columna izquierda: links -->
+            <div class="links-contacto">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/juan-ignacio-nemi-042a69220/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/nemi1414" target="_blank">Github</a></li>
+                    <li><a href="mailto:juanignacionemi@gmail.com">juanignacionemi@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- Columna derecha: invitación + formulario -->
+            <div class="form-contacto">
+                <p>Si estás interesado en trabajar conmigo o simplemente querés ponerte en contacto, te invito a dejarme tus datos:</p>
+                <form>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+                
+                    <label for="email">Correo:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

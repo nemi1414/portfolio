@@ -1,0 +1,327 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*Estilos general de todo*/
+/* Resetear márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* importante para que el padding no afecte al ancho */
+}
+/* Forzar que body y html ocupen toda la pantalla */
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+/* Opcional: un color de fondo general */
+body {
+    background-color: #13375b; /* azul oscuro, por ejemplo */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+section {
+    width: 100%;       /* ocupa todo el ancho */
+    max-width: 1200px; /* opcional, para que no se vea gigante en pantallas enormes */
+    margin: 0 auto;    /* centra el contenido */
+    padding: 50px 20px; /* espacio interno */
+}
+
+
+
+
+/* Estilo general del header */
+header {
+    display: flex;
+    flex-direction: column; /* h1/h2 arriba y nav debajo */
+    align-items: center;    /* centra horizontalmente todo el contenido */
+    padding: 20px;
+    background-image: url("fotoPortada.jpeg"); /* tu imagen */
+    background-size: cover;       /* la imagen cubre todo el header */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat;
+    color: white;                 /* cambia texto a blanco para que contraste */
+}
+
+/* Contenedor de los títulos */
+.titulos-header {
+    text-align: center; /* centra el texto */
+    margin-bottom: 15px; /* espacio entre títulos y navbar */
+}
+
+.titulos-header h1 {
+    font-size: 2.5rem; /* tamaño grande para el nombre */
+    margin: 0;
+}
+
+.titulos-header h2 {
+    font-size: 1.5rem; /* más pequeño que h1 */
+    margin: 5px 0 0 0;
+    font-weight: normal;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* espacio entre los links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* color al pasar el mouse */
+    background-color: rgba(0,0,0,0.5); /* fondo semitransparente */
+    border-radius: 5px;
+}
+
+
+
+
+/*estilos generales de sobre mi*/
+#sobre-mi {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: flex-start; /* alinea la imagen con el inicio del texto */
+    justify-content: space-between;
+    gap: 30px; /* espacio entre texto e imagen */
+    flex-wrap: wrap; /* en pantallas pequeñas, se apilen */
+    max-width: 1200px;
+    margin: 0 auto; /* centra todo el contenedor */
+}
+
+.sobre-mi-texto {
+    flex: 1; /* ocupa todo el espacio disponible a la izquierda */
+    min-width: 250px; /* evita que se achique demasiado */
+}
+
+.sobre-mi-texto h3 {
+    text-align: center; /* centra el título */
+    margin-bottom: 30px; /* espacio antes de los párrafos */
+    font-size: 2rem;
+}
+#sobre-mi h3 {
+    width: 80%;        /* ocupa todo el ancho de la sección */
+    text-align: center; /* centra el texto */
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.sobre-mi-texto p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* para que se lea mejor */
+}
+
+.foto-sobre-mi {
+    width: 200px; /* tamaño de la foto, ajustable */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* opcional, bordes redondeados */
+}
+
+
+
+
+/*estilos de section de conocimientos*/
+.titulo-conocimientos{
+    text-align: center;
+    font-size: 2rem;
+}
+#conocimientos .iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 50px;                             /* espacio entre iconos */
+    justify-items: center;                 /* centra cada icono en su columna */
+    margin-top: 20px;
+    max-width: 800px;                      /* ancho máximo */
+    margin-left: auto;
+    margin-right: auto;                    /* centra el grid en la página */
+}
+
+#conocimientos .iconos i {
+    font-size: 90px; /* tamaño más grande de los iconos */
+}
+
+
+
+/*estilos generales de proyectos*/
+#proyectos h3 {
+    text-align: center;   /* centra el título */
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.escalera {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+.texto-proyecto {
+    display: flex;
+    flex-direction: column; /* h4 arriba, p debajo */
+}
+.texto-proyecto h4 {
+    margin-left: 15px; /* mueve un poquito el h4 a la derecha */
+    margin-bottom: 10px;
+}
+.texto-proyecto p {
+    margin: 5px 0;
+    text-align: left;
+}
+.escalera iframe {
+    width: 400px;
+    height: 225px;
+    flex-shrink: 0;
+}
+
+.cine {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+.cine iframe {
+    width: 400px;
+    height: 225px;
+    flex-shrink: 0;
+}
+
+.ecommerce {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+.ecommerce iframe {
+    width: 400px;
+    height: 225px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+/*estilos generales de estudios*/
+#estudios h3 {
+    text-align: center; /* centra el título */
+    margin-bottom: 30px; /* separa el título del contenido */
+    font-size: 2rem;
+}
+
+#estudios ul {
+    display: flex;             /* coloca los li en fila */
+    justify-content: space-around; /* distribuye el espacio entre ellos */
+    flex-wrap: wrap;           /* para pantallas pequeñas, se envuelven */
+    padding: 0;
+    margin: 0;
+    list-style: none;          /* quita viñetas */
+    gap: 20px;                 /* separación entre los li */
+}
+
+#estudios ul li {
+    flex: 1 1 30%;             /* cada li ocupa aprox 30% del ancho, flexible */
+    min-width: 200px;          /* ancho mínimo para móviles */
+    text-align: center;         /* centra el texto dentro del li */
+}
+
+
+
+/*estilos generales contacto*/
+#contacto h3{
+    text-align: center; /* centra el título */
+    margin-bottom: 30px; /* separa el título del contenido */
+    font-size: 2rem;
+}
+.links-contacto ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* separación entre cada link */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* centra el bloque */
+    max-width: 800px; /* ancho máximo para que no se estire de más */
+    text-align: center;
+}
+
+.links-contacto li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-contacto {
+    max-width: 100%;      /* ocupa todo el ancho */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;   /* centra el texto del <p> */
+}
+
+.form-contacto p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.form-contacto form {
+    display: flex;
+    flex-direction: column; /* inputs uno debajo del otro */
+    align-items: center;    /* centra los inputs */
+}
+
+.form-contacto label {
+    align-self: flex-start; /* las etiquetas alineadas a la izquierda */
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 80%;            /* inputs largos, 80% del ancho de pantalla */
+    max-width: 1000px;     /* límite para que no se estire demasiado en pantallas grandes */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.form-contacto textarea {
+    min-height: 120px;
+    resize: vertical; /* permite agrandar manualmente */
+}
+
+.form-contacto button {
+    width: 40%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-contacto button:hover {
+    background-color: #003080;
+}
+
